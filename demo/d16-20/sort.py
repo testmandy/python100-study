@@ -15,9 +15,14 @@ def select_sort(origin_items, comp=lambda x, y: x < y):
             if comp(items[j], items[min_index]):
                 min_index = j
         items[i], items[min_index] = items[min_index], items[i]
+    print(items)
     return items
 
 
 def main():
-    select_sort()
+    items = [1, 8, 5, 2, 56, 4, 89, 2, 6, 90]
+    select_sort(items)
+
+
+print(main())
 
